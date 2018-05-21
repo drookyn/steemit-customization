@@ -7,6 +7,10 @@ Steemit-Customization
 
 ### Installation
 1. Install Tamermonkey in your browser: [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=de) or [Firefox](https://addons.mozilla.org/de/firefox/addon/tampermonkey/)
-2. Click [this link](https://raw.githubusercontent.com/drookyn/steemit-customization/master/dist/syntax-highlighting.user.js) to install the script
-3. Go back to [steemit.com](https://steemit.com) and reload (F5 or cmd+r)
-4. Done
+2. Open any script you want to install in the `dist` folder and press `Raw`
+3. Follow the instructions
+4. Go back to [steemit.com](https://steemit.com) and reload (F5 or cmd+r)
+5. Done
+
+### Scripts
+* [Syntax-Highlighter](https://github.com/drookyn/steemit-customization/raw/master/dist/syntax-highlighting.user.js)
