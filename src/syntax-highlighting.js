@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         steemit - Syntax-Highlighting
 // @icon         https://steemit.com/images/favicons/apple-touch-icon-144x144.png
-// @namespace    https://github.com/drookyn
-// @match        https://steemit.com/*
+// @namespace    https://github.com/drookyn/steemit-customization
+// @include      /^https?://steemit.com/.*$/
 // @version      1.0
 // @description  Tries to detect language in code blocks and does some syntax highlighting
 // @author       Drookyn
@@ -10,6 +10,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js
 // @resource     hljsCSS https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css
 // @downloadURL  https://raw.githubusercontent.com/drookyn/steemit-customization/master/dist/syntax-highlighting.js
+// @updateURL    https://raw.githubusercontent.com/drookyn/steemit-customization/master/dist/syntax-highlighting.js
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
 // ==/UserScript==
