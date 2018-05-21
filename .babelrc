@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env"
+  ],
+  "env": {
+    "production": {
+      "comments": true,
+      "compact": true,
+      "minified": true
+    }
+  }
+}

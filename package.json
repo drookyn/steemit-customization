@@ -1,0 +1,44 @@
+{
+  "name": "steemit-customization",
+  "version": "1.0.0",
+  "repository": "git@github.com:drookyn/steemit-customization.git",
+  "author": "Florian Vogt",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src/ --out-dir dist/ --copy-files",
+    "build:dev": "concurrently -k \"npm run clean\" \"babel src/ --out-dir tmp/ --copy-files --source-maps inline\"",
+    "clean": "del-cli dist/**/* tmp/ !.gitkeep",
+    "lint": "eslint src/**/*.js",
+    "prebuild": "npm run clean",
+    "start": "npm run build:dev"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && git add dist/* && lint-staged",
+      "pre-push": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "npm run lint",
+      "prettier --write --single-quote --trailing-comma all",
+      "git add ."
+    ]
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "concurrently": "^3.5.0",
+    "cross-env": "^5.0.5",
+    "del-cli": "^1.1.0",
+    "eslint": "4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "1.0.0-rc.6",
+    "lint-staged": "7.1.2",
+    "prettier": "^1.7.3"
+  }
+}

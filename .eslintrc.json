@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "rules": {
+    "strict": [2, "safe"],
+    "linebreak-style": 0,
+    "jsx-a11y/href-no-hash": "off",
+    "arrow-parens": "off"
+  }
+}
